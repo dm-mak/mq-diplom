@@ -18,6 +18,7 @@ html {
 
 * {
   box-sizing: border-box;
+  line-height: 1;
 }
 
 h1,
@@ -60,7 +61,7 @@ header {
   position: absolute;
 }
 
-.conteiner {
+.box-header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -160,5 +161,110 @@ header {
 
   .button-text {
     margin: .9rem 1rem;
+    line-height: 1;
   }
+
+  /* main  athlets and players */
+
+  .athlets, .players {
+    position: relative;
+  }
+
+  .athlets h1,  .players h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    padding-top: 2.4rem;
+    margin-bottom: 24.4rem;
+  }
+
+  .athlets h2,  .players h2{
+    text-transform: uppercase;
+    color: #c1c1c1;
+    font-size: 2.3rem;
+    margin-left: 1rem;
+  }
+
+  .athlets p, .players p {
+    font-size: 1.5rem;
+    margin: 2.8rem 0 0 0;
+    letter-spacing: 0.075rem;
+    line-height: 1.2;
+  }
+
+  .items section {
+    padding-top: 6rem;
+    padding-bottom: 5.6rem;
+  }
+
+  .items section:first-child {
+    background-color: #fafafa;
+    padding-top: 8.3rem;
+  }
+
+  .items section:nth-child(2) {
+    background-color: #f5f4f9;
+  }
+
+  .athlets .items section:last-child {
+    background-color: #5e42b0;
+  }
+
+  .players .items section:last-child {
+    background-color: #090c35;
+  }
+
+  .athlets .item-title, .players .item-title {
+    display: flex;
+  }
+
+  .athlets .item, .players .item {
+    font-size: 1.4rem;
+    letter-spacing: 0.07rem;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .players section:last-child .item {
+    color: #8765dd;
+  }
+
+  .athlets .item::after, .players .item::after {
+    content: '';
+    height: .4rem;
+    width: 1.7rem;
+    position: absolute;
+    background-color: #5e42b0;
+    border-radius: .17rem;
+    bottom: .3rem;
+    left: 0;
+  }
+
+  .athlets section:last-child .item::after, .players section:last-child .item::after{
+    content: '';
+    height: .4rem;
+    width: 1.7rem;
+    position: absolute;
+    background-color: white;
+    border-radius: .17rem;
+    bottom: .3rem;
+    left: 0;
+  }
+
+  .items section:last-child p {
+    color: white;
+  }
+
+  .athlets_img {
+    position: absolute;
+    top: 8rem;
+    left: 7rem;
+  }
+
+  .players_img {
+    position: absolute;
+    top: 8rem;
+    right: .9rem;
+  }
+ 
 }
