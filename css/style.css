@@ -66,13 +66,18 @@ header {
   flex-direction: column;
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media (max-width: 640px) {
+
+  body {
+    min-width: 320px;
+  }
+
   .bg-image {
     background-image: url(../images/football_767.jpg);
   }
 
   .conteiner {
-    padding: 3.3rem 2rem 8.4rem;
+    padding: 3.3rem 6.25% 8.4rem;
   }
 
   .logo-block {
@@ -90,6 +95,7 @@ header {
     color: white;
     margin-top: 13.7rem;
     text-transform: uppercase;
+    letter-spacing: ;
   }
 
   .slogan h2, .slogan h1 {
@@ -97,6 +103,7 @@ header {
   }
 
   .slogan h1 {
+    margin-top: 3rem;
     padding-left: 4.5rem;
   }
 
@@ -116,7 +123,7 @@ header {
     height: 3.5rem;
     display: flex;
     align-items: center;
-    padding: 0 0 0 8.4rem;
+    padding: 0 0 0 26.25%;
   }
 
   .button-wrapper:nth-child(even) {
