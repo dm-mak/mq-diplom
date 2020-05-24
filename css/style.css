@@ -124,14 +124,14 @@ header {
   }
 
   .icon-ios {
-    background-image: url(svg/apple_logo_black.svg);
+    background-image: url(../svg/apple_logo_black.svg);
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
   }
 
   .icon-android {
-    background-image: url(svg/google-play.svg);
+    background-image: url(../svg/google-play.svg);
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
