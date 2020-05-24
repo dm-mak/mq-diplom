@@ -1,0 +1,145 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(/fonts/OpenSans-Bold.woff);
+  font-weight: 800;
+  font-style: bold;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image::before {
+  content: "";
+  background-color: #0a0e34;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .9;
+  position: absolute;
+}
+
+.conteiner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .bg-image {
+    background-image: url(/images/football_767.jpg);
+  }
+
+  .conteiner {
+    padding: 3.3rem 2rem 8.4rem;
+  }
+
+  .logo-block {
+    display: inherit;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 13.3rem;
+  }
+
+  
+
+  .slogan {
+    color: white;
+    margin-top: 13.7rem;
+    text-transform: uppercase;
+  }
+
+  .slogan h2, .slogan h1 {
+    font-size: 2.8rem;
+  }
+
+  .slogan h1 {
+    padding-left: 4.5rem;
+  }
+
+  .buttons {
+    margin-top: 9rem;
+  }
+
+  .button-wrapper {
+    width: 100%;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .8rem;
+    border: 0;
+    border-radius: 1.7rem;
+    background-color: #5e42b0;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 8.4rem;
+  }
+
+  .button-wrapper:nth-child(even) {
+    margin-top: 1.4rem;
+  }
+
+  .icon-ios {
+    background-image: url(/svg/apple_logo_black.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  .icon-android {
+    background-image: url(/svg/google-play.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  .button-text {
+    padding-left: 1rem;
+  }
+
+
+} 
