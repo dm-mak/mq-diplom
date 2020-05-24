@@ -52,7 +52,7 @@ header {
 .bg-image::before {
   content: "";
   background-color: #0a0e34;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -66,6 +66,42 @@ header {
   flex-direction: column;
 }
 
+.logo-block {
+  display: inherit;
+  justify-content: center;
+}
+
+.slogan {
+  color: white;
+  text-transform: uppercase;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.button-wrapper {
+  background-color: #5e42b0;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ios {
+  background-image: url(../svg/apple_logo_black.svg);
+}
+
+.android {
+  background-image: url(../svg/google-play.svg);
+}
+
 @media (max-width: 640px) {
 
   body {
@@ -74,34 +110,30 @@ header {
 
   .bg-image {
     background-image: url(../images/football_767.jpg);
+    height: 100vh;
   }
 
   .conteiner {
-    padding: 3.3rem 6.25% 8.4rem;
-  }
-
-  .logo-block {
-    display: inherit;
-    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .logo {
+    margin-top: 3.3rem;
     width: 13.3rem;
   }
 
-  
-
   .slogan {
-    color: white;
     margin-top: 13.7rem;
-    text-transform: uppercase;
-  }
-
-  .slogan h2, .slogan h1 {
-    font-size: 2.8rem;
+    letter-spacing: 0.14rem;
   }
 
   .slogan h1 {
+    font-size: 2.8rem;
+  }
+
+  .slogan-2 {
+    display: block;
     margin-top: 3rem;
     padding-left: 4.5rem;
   }
@@ -111,41 +143,129 @@ header {
   }
 
   .button-wrapper {
-    width: 100%;
-    color: white;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: .8rem;
-    border: 0;
     border-radius: 1.7rem;
-    background-color: #5e42b0;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    padding: 0 0 0 26.25%;
+    font-size: .8rem;
+    letter-spacing: 0.04rem;
+    padding-left: 8.4rem;
   }
 
-  .button-wrapper:nth-child(even) {
+  .buttons a:nth-child(even) .button-wrapper {
     margin-top: 1.4rem;
   }
 
-  .icon-ios {
-    background-image: url(../svg/apple_logo_black.svg);
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-  }
-
-  .icon-android {
-    background-image: url(../svg/google-play.svg);
-    background-repeat: no-repeat;
+  .icon {
     width: 24px;
     height: 24px;
   }
 
   .button-text {
-    padding-left: 1rem;
+    margin: .9rem 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+  .bg-image {
+    background-image: url(../images/football_1280.jpg);
+    height: 96rem;
   }
 
+  .conteiner {
+    padding-left: 3.3rem;
+    padding-right: 3.3rem;
+  }
 
-} 
+  .logo {
+    margin-top: 4rem;
+    width: 20.5rem;
+  }
+
+  .slogan {
+    margin-top: 18.1rem;
+    letter-spacing: 0.32rem;
+  }
+
+  .slogan h1 {
+    font-size: 6.4rem;
+  }
+
+  .slogan-1 {
+    padding-left: 6rem;
+  }
+
+  .slogan-2 {
+    display: block;
+    padding-left: 16.8rem;
+  }
+
+  .buttons {
+    margin-top: 31.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-wrapper {
+    width: 31rem;
+    border-radius: 3.85rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.04rem;
+    height: 7.7rem;
+  }
+
+  .buttons a:nth-child(even) .button-wrapper {
+    margin-left: 3rem;
+  }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ios {
+    margin-left: 4.1rem;
+  }
+  
+  .android {
+    margin-left: 5.7rem;
+  }
+
+  .button-text {
+    margin: 0 2.7rem;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+
+  .bg-image {
+    background-image: url(../images/football_1920.jpg);
+    height: 96rem;
+  }
+
+  .conteiner {
+    width: 155.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+  }
+
+  .logo {
+    margin-top: 4.5rem;
+    width: 19.1rem;
+  }
+
+  .slogan {
+    margin-top: 29.5rem;
+    letter-spacing: 0.45rem;
+  }
+
+  .slogan h1 {
+    font-size: 9rem;
+  }
+
+  .slogan-2 {
+    display: block;
+    padding-left: 45.3rem;
+  }
+
+  
+}
