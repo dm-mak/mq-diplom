@@ -1,13 +1,13 @@
 @font-face {
   font-family: OpenSans;
-  src: url(./fonts/OpenSans-Regular.woff);
+  src: url(fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: OpenSans;
-  src: url(./fonts/OpenSans-Bold.woff);
+  src: url(fonts/OpenSans-Bold.woff);
   font-weight: 800;
   font-style: bold;
 }
@@ -68,7 +68,7 @@ header {
 
 @media (min-width: 320px) and (max-width: 640px) {
   .bg-image {
-    background-image: url(./images/football_767.jpg);
+    background-image: url(images/football_767.jpg);
   }
 
   .conteiner {
@@ -124,14 +124,14 @@ header {
   }
 
   .icon-ios {
-    background-image: url(./svg/apple_logo_black.svg);
+    background-image: url(svg/apple_logo_black.svg);
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
   }
 
   .icon-android {
-    background-image: url(./svg/google-play.svg);
+    background-image: url(svg/google-play.svg);
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
