@@ -84,7 +84,6 @@ header {
   background-color: #5e42b0;
   color: white;
   display: flex;
-  flex-wrap: nowrap;
   text-transform: uppercase;
   align-items: center;
 }
@@ -110,7 +109,6 @@ header {
 
   .bg-image {
     background-image: url(../images/football_767.jpg);
-    height: 100vh;
   }
 
   .conteiner {
@@ -151,6 +149,7 @@ header {
 
   .buttons a:nth-child(even) .button-wrapper {
     margin-top: 1.4rem;
+    margin-bottom: 8.4rem;
   }
 
   .icon {
