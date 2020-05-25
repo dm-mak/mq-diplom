@@ -114,17 +114,17 @@ header {
   }
 
   .conteiner {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
   }
 
   .logo {
-    margin-top: 3.3rem;
+    margin-top: 11.78%;
     width: 13.3rem;
   }
 
   .slogan {
-    margin-top: 13.7rem;
+    margin-top: 48.92%;
     letter-spacing: 0.14rem;
   }
 
@@ -135,23 +135,23 @@ header {
   .slogan-2 {
     display: block;
     margin-top: .9rem;
-    padding-left: 4.5rem;
+    padding-left: 16%;
     line-height: 1;
   }
 
   .buttons {
-    margin-top: 9rem;
+    margin-top: 32.14%;
   }
 
   .button-wrapper {
     border-radius: 1.7rem;
     font-size: .8rem;
     letter-spacing: 0.04rem;
-    padding-left: 8.4rem;
+    padding-left: 30%;
   }
 
   .buttons a:nth-child(even) .button-wrapper {
-    margin-top: 1.4rem;
+    margin-top: 4.375%;
   }
 
   .icon {
@@ -164,7 +164,7 @@ header {
     line-height: 1;
   }
 
-  /* main  athlets and players */
+  /* main  athlets and players
 
   .athlets, .players {
     position: relative;
@@ -174,8 +174,8 @@ header {
     font-size: 5rem;
     text-transform: uppercase;
     color: #e7e7e7;
-    padding-top: 2.4rem;
-    margin-bottom: 24.4rem;
+    padding-top: 8.6%;
+    margin-bottom: 76.25%;
   }
 
   .athlets h2,  .players h2{
@@ -199,7 +199,7 @@ header {
 
   .items section:first-child {
     background-color: #fafafa;
-    padding-top: 8.3rem;
+    padding-top: 25.93%;
   }
 
   .items section:nth-child(2) {
@@ -261,13 +261,17 @@ header {
     left: 7rem;
   }
 
+  .athlets__img {
+    width: 100%;
+  }
+
   .players_img {
     position: absolute;
     top: 8rem;
     right: .9rem;
   }
 
-  /* main achiv */
+  main achiv 
 
   .achiv {
     position: relative;
@@ -317,5 +321,5 @@ header {
     margin-top: 2.4rem;
     margin-bottom: 8rem;
     letter-spacing: 0.08rem;
-  }
+  } */
 }
