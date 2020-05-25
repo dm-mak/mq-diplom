@@ -44,6 +44,12 @@ header {
   position: relative;
 }
 
+header .conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
 .bg-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -61,23 +67,12 @@ header {
   position: absolute;
 }
 
-.box-header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-block {
-  display: inherit;
-  justify-content: center;
-}
-
 .slogan {
   color: white;
   text-transform: uppercase;
 }
 
-.buttons a {
+a {
   text-decoration: none;
 }
 
@@ -102,6 +97,158 @@ header {
   background-image: url(../svg/google-play.svg);
 }
 
+/* main */
+
+.athlets,
+.players {
+  position: relative;
+}
+
+.athlets h1,
+.players h1 {
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.athlets h2,
+.players h2 {
+  text-transform: uppercase;
+  color: #c1c1c1;
+}
+
+.athlets_img,
+.players_img {
+  position: absolute;
+}
+
+.athlets section:nth-child(2),
+.players section:nth-child(2) {
+  background-color: #f5f4f9;
+}
+
+.athlets .items section:last-child {
+  background-color: #5e42b0;
+}
+
+.players .items section:last-child {
+  background-color: #090c35;
+}
+
+.athlets .item-title,
+.players .item-title {
+  display: flex;
+}
+
+.athlets .item,
+.players .item {
+  font-weight: bold;
+  position: relative;
+}
+
+.athlets .item::after,
+.players .item::after {
+  content: '';
+  position: absolute;
+  background-color: #5e42b0;
+}
+
+.athlets section:last-child .item::after,
+.players section:last-child .item::after {
+  background-color: white;
+}
+
+.players section:last-child .item {
+  color: #8765dd;
+}
+
+.athlets section:last-child p,
+.players section:last-child p {
+  color: white;
+}
+
+/* section */
+
+.section-content {
+  position: relative;
+}
+
+.section .block-item {
+  position: absolute;
+}
+
+.section .item {
+  background-color: #5e42b0;
+  display: inline-flex;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.section .item::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+}
+
+.section h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+/* footer  */
+
+footer {
+  position: relative;
+}
+
+footer.bg-image {
+  background-image: url(../images/game_767.jpg);
+}
+
+footer.bg-image::before {
+  content: "";
+  background-color: #0a0e34;
+  position: absolute;
+}
+
+footer .conteiner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .text, footer .sub-text {
+  color: white;
+  text-transform: uppercase;
+}
+
+footer .text {
+  font-weight: bold;
+}
+
+footer .sub-text {
+  color: #9b8ec1;
+}
+
+.logo-app {
+  background: #50329c;
+  background: linear-gradient(0deg, #50329c 0%, #5e3db3 50%, #7751db 100%);
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 424px) and (max-width: 640px) {
+  .athlets__img {
+    max-width: 225px;
+  }
+
+  .players__img {
+    max-width: 280px;
+  }
+}
+
 @media (max-width: 640px) {
 
   body {
@@ -114,17 +261,18 @@ header {
   }
 
   .conteiner {
-    padding-left: 6.25%;
-    padding-right: 6.25%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
   }
 
   .logo {
-    margin-top: 11.78%;
+    margin-top: 3.3rem;
     width: 13.3rem;
   }
 
   .slogan {
-    margin-top: 48.92%;
+    margin-top: 13.7rem;
     letter-spacing: 0.14rem;
   }
 
@@ -134,16 +282,17 @@ header {
 
   .slogan-2 {
     display: block;
-    margin-top: .9rem;
-    padding-left: 16%;
+    margin-top: 2rem;
+    padding-left: 4.5rem;
     line-height: 1;
   }
 
-  .buttons {
-    margin-top: 32.14%;
+  header .buttons {
+    margin-top: 9rem;
   }
 
   .button-wrapper {
+    width: 28rem;
     border-radius: 1.7rem;
     font-size: .8rem;
     letter-spacing: 0.04rem;
@@ -151,7 +300,7 @@ header {
   }
 
   .buttons a:nth-child(even) .button-wrapper {
-    margin-top: 4.375%;
+    margin-top: 1.4rem;
   }
 
   .icon {
@@ -164,162 +313,100 @@ header {
     line-height: 1;
   }
 
-  /* main  athlets and players */
-
-  .athlets, .players {
-    position: relative;
-  }
-
-  .athlets h1,  .players h1{
+  .athlets h1,
+  .players h1 {
     font-size: 5rem;
-    text-transform: uppercase;
-    color: #e7e7e7;
-    padding-top: 8.6%;
-    margin-bottom: 76.25%;
+    padding-top: 2.4rem;
   }
 
-  .athlets h2,  .players h2{
-    text-transform: uppercase;
-    color: #c1c1c1;
+  .athlets h2,
+  .players h2 {
     font-size: 2.3rem;
     margin-left: 1rem;
   }
 
-  .athlets p, .players p {
-    font-size: 1.5rem;
-    margin: 2.8rem 0 0 0;
-    letter-spacing: 0.075rem;
-    line-height: 1.2;
+  .athlets_img {
+    top: 8rem;
+    left: 7rem;
+    z-index: 1;
   }
 
-  .items section {
+  .players_img {
+    top: 8rem;
+    right: 0;
+    z-index: 1;
+  }
+
+  .athlets section:first-child,
+  .players section:first-child {
+    margin-top: 24.4rem;
+    padding-top: 8.3rem;
+  }
+
+  .athlets section,
+  .players section {
     padding-top: 6rem;
-    padding-bottom: 5.6rem;
+    padding-bottom: 5.5rem;
   }
 
-  .items section:first-child {
-    background-color: #fafafa;
-    padding-top: 25.93%;
-  }
-
-  .items section:nth-child(2) {
-    background-color: #f5f4f9;
-  }
-
-  .athlets .items section:last-child {
-    background-color: #5e42b0;
-  }
-
-  .players .items section:last-child {
-    background-color: #090c35;
-  }
-
-  .athlets .item-title, .players .item-title {
-    display: flex;
-  }
-
-  .athlets .item, .players .item {
+  .athlets .item,
+  .players .item {
     font-size: 1.4rem;
     letter-spacing: 0.07rem;
-    font-weight: bold;
-    position: relative;
   }
 
-  .players section:last-child .item {
-    color: #8765dd;
-  }
-
-  .athlets .item::after, .players .item::after {
-    content: '';
+  .athlets .item::after,
+  .players .item::after {
     height: .4rem;
     width: 1.7rem;
-    position: absolute;
-    background-color: #5e42b0;
     border-radius: .17rem;
     bottom: .3rem;
     left: 0;
   }
 
-  .athlets section:last-child .item::after, .players section:last-child .item::after{
-    content: '';
-    height: .4rem;
-    width: 1.7rem;
-    position: absolute;
-    background-color: white;
-    border-radius: .15rem;
-    bottom: .3rem;
-    left: 0;
+  .athlets p,
+  .players p {
+    font-size: 1.5rem;
+    letter-spacing: 0.075rem;
+    line-height: 1.2;
+    margin: 2.8rem 0 0 0;
   }
 
-  .items section:last-child p {
-    color: white;
+  .athlets section:first-child,
+  .players section:first-child {
+    background-color: #fafafa;
   }
 
-  .athlets_img {
-    position: absolute;
-    top: 8rem;
-    left: 7rem;
-  }
+  /* section */
 
-  .athlets__img {
-    width: 100%;
-  }
-
-  .players_img {
-    position: absolute;
-    top: 8rem;
-    right: .9rem;
-  }
-
-  /* main achiv */
-
-  .achiv {
-    position: relative;
-  }
- 
-  .achiv__img {
+  .section__img {
     max-width: 100%;
   }
 
-  .achiv .block-item {
-    position: absolute;
-    top: -9rem;
+  .section .block-item {
+    top: -8.5rem;
     left: 2rem;
-  } 
-
-  .achiv .item {
-    background-color: #5e42b0;
-    display: inline-flex;
-    color: white;
-    padding: 2.7rem;
-    font-size: 1.4rem;
-    font-weight: bold;
   }
 
-  .achiv .item::after {
-    content: '';
+  .section .item {
+    padding: 2.7rem;
+    font-size: 1.4rem;
+  }
+
+  .section .item::after {
     height: .4rem;
     width: 1.5rem;
-    position: absolute;
-    background-color: white;
     opacity: .3;
     border-radius: .15rem;
     bottom: 2rem;
   }
 
-  .achiv-content {
-    position: relative;
-  }
-
-  .achiv h1 {
+  .section h1 {
     margin-top: 3.4rem;
-    font-weight: bold;
     font-size: 2.8rem;
-    text-transform: uppercase;
-    color: #e7e7e7;
   }
 
-  .achiv p {
+  .section p {
     font-size: 1.6rem;
     line-height: 1.25;
     margin-top: 2.4rem;
@@ -327,29 +414,47 @@ header {
     letter-spacing: 0.08rem;
   }
 
-  /* main achiv */
-
-  footer.bg-image{
-      background-image: url(../images/game_767.jpg);
-      min-height: 100vh;
-      position: relative;
-  }
+  /* footer  */
 
   footer.bg-image::before {
-    content: "";
-    background-color: #0a0e34;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     opacity: .9;
-    position: absolute;
   }
 
-  .logo-app-box {
-    width: 74px;
-    height: 74px;
-    background-color: white;
+  footer .conteiner {
+    padding-top: 10rem;
   }
 
+  .logo-app {
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 1.7rem;
+  }
+
+  .logo-app img {
+    width: 5.5rem;
+  }
+
+  footer .text {
+    font-size: 3.15rem;
+    letter-spacing: 0.16rem;
+    margin-top: 6rem;
+  }
+
+  footer .sub-text {
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  footer .buttons {
+    margin-top: 7.7rem;
+  }
+
+  footer .logo {
+    margin-top: 8.2rem;
+    margin-bottom: 1rem;
+  }
 }
