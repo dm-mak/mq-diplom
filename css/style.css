@@ -110,7 +110,7 @@ header {
 
   .bg-image {
     background-image: url(../images/football_767.jpg);
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .conteiner {
@@ -246,7 +246,7 @@ header {
     width: 1.7rem;
     position: absolute;
     background-color: white;
-    border-radius: .17rem;
+    border-radius: .15rem;
     bottom: .3rem;
     left: 0;
   }
@@ -266,5 +266,56 @@ header {
     top: 8rem;
     right: .9rem;
   }
+
+  /* main achiv */
+
+  .achiv {
+    position: relative;
+  }
  
+  .achiv__img {
+    max-width: 100%;
+  }
+
+  .achiv .block-item {
+    position: absolute;
+    top: 29.3rem;
+    left: 2rem;
+  } 
+
+  .achiv .item {
+    background-color: #5e42b0;
+    display: inline-flex;
+    color: white;
+    padding: 2.7rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .achiv .item::after {
+    content: '';
+    height: .4rem;
+    width: 1.5rem;
+    position: absolute;
+    background-color: white;
+    opacity: .3;
+    border-radius: .15rem;
+    bottom: 2rem;
+  }
+
+  .achiv h1 {
+    margin-top: 3.4rem;
+    font-weight: bold;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #e7e7e7;
+  }
+
+  .achiv p {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-top: 2.4rem;
+    margin-bottom: 8rem;
+    letter-spacing: 0.08rem;
+  }
 }
