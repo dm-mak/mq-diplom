@@ -1,13 +1,13 @@
 @font-face {
   font-family: OpenSans;
-  src: url('/fonts/OpenSans-Regular.woff');
+  src: url('../fonts/OpenSans-Regular.woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: OpenSans;
-  src: url('/fonts/OpenSans-Bold.woff');
+  src: url('../fonts/OpenSans-Bold.woff');
   font-weight: 800;
   font-style: bold;
 }
@@ -90,11 +90,11 @@ a {
 }
 
 .ios {
-  background-image: url('/svg/apple_logo_black.svg');
+  background-image: url('../svg/apple_logo_black.svg');
 }
 
 .android {
-  background-image: url('/svg/google-play.svg');
+  background-image: url('../svg/google-play.svg');
 }
 
 /* main */
@@ -240,7 +240,7 @@ footer .sub-text {
   }
 
   .bg-image {
-    background-image: url('/images/football_767.jpg');
+    background-image: url('../images/football_767.jpg');
     min-height: 100vh;
   }
 
@@ -442,7 +442,7 @@ footer .sub-text {
   }
 
   footer.bg-image {
-    background-image: url('/images/game_767.jpg');
+    background-image: url('../images/game_767.jpg');
   }
 
   footer .conteiner {
@@ -485,7 +485,7 @@ footer .sub-text {
 @media (min-width: 641px) and (max-width: 960px) {
 
   .bg-image {
-    background-image: url('/images/football_1280.jpg');
+    background-image: url('../images/football_1280.jpg');
     min-height: 96rem;
   }
 
@@ -696,7 +696,7 @@ footer .sub-text {
   }
 
   footer.bg-image {
-    background-image: url('/images/game_1280.jpg');
+    background-image: url('../images/game_1280.jpg');
   }
 
   footer .conteiner {
@@ -798,7 +798,7 @@ footer .sub-text {
   }
 
   .bg-image {
-    background-image: url('/images/football_1920.jpg');
+    background-image: url('../images/football_1920.jpg');
     height: 96rem;
   }
 
@@ -1033,7 +1033,7 @@ footer .sub-text {
   }
 
   footer.bg-image {
-    background-image: url('/images/game_1280.jpg');
+    background-image: url('../images/game_1280.jpg');
   }
 
   footer .conteiner {
